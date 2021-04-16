@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CETCC</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Upload File</legend>
+      <form id="fileUp">
+        <input type="file" required accept="text/html, text/plain, application/json, text/css, application/x-javascript">
+        <br>
+        <button type="submit">Convert</button>
+      </form>
+    </fieldset>
+    <fieldset>
+      <legend>By URL</legend>
+      <form id="byURL">
+        <input type="url" required id="url">
+        <button type="submit">Convert</button>
+      </form>
+    </fieldset>
+    <fieldset>
+      <legend>Manually</legend>
+      <form id="byManually">
+        <textarea id="ta" rows="8" cols="80" required></textarea>
+        <br>
+        <button type="submit">Convert</button>
+      </form>
+    </fieldset>
+    <fieldset>
+      <legend>Result</legend>
+      <textarea id="textarea" rows="8" cols="80"></textarea>
+      <br>
+      <button type="button" id="copy">Copy</button>
+    </fieldset>
+  </body>
+  <footer>
+    <script src="script.js" charset="utf-8"></script>
+  </footer>
+</html>
